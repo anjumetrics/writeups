@@ -45,7 +45,7 @@ The reason for using  `NULL`  as the values returned from the injected  `SELECT`
 ### Payload
 We will systematically attempt the `' UNION SELECT NULL--` technique until we obtain the desired outcome in the application's response.
 
-![poc_union_attack_determining_the number_of_columns](../images/union_attack_determining_the number_of_columns.png)
+![poc_union_attack_determining_the number_of_columns](../images/union_attack_determining_the_number_of_columns.png)
 
 After executing the query parameter with `' UNION SELECT NULL, NULL, NULL--`, the backend successfully processes the query without generating any errors. From this observation, we deduce that the database comprises three columns.
 
