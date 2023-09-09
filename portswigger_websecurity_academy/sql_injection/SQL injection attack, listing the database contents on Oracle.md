@@ -46,7 +46,7 @@ At first enumerate table name using `all_tables`. `' UNION SELECT table_name,NUL
 
  And at last enumerate the content in these two columns. `' UNION SELECT USERNAME_UDFHCA, PASSWORD_VHAXCV FROM USERS_HCVAFF--` helps us with this.
  
-![poc_oracle_db_column_name.png](../images/oracle_db_column_name.png)
+![poc_oracle_db_username_password.png](../images/oracle_db_username_password.png)
 
 **Understanding the Logic:**
 
