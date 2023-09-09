@@ -27,7 +27,8 @@ Determining __number of columns present in the database table.__ Here we will us
 
 ![poc_orcle_db_num_of_column.png](../images/orcle_db_num_of_column.png)
 
-Finding _column with string datatype._ After invoking `' UNION SELECT 'a','a' FROM DUAL--` we got no error. Means both column is string datatype.
+Finding __column with string datatype.__ After invoking `' UNION SELECT 'a','a' FROM DUAL--` we got no error. Means both column is string datatype.
+
 ![poc_oracle_db_string.png](../images/oracle_db_string.png)
 
 
