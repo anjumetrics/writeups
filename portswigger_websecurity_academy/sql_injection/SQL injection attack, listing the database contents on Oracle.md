@@ -31,7 +31,7 @@ Finding _column with string datatype._ After invoking `' UNION SELECT 'a','a' FR
 ![poc_oracle_db_string.png](../images/oracle_db_string.png)
 
 
-**Tip:** As you can see from this lab, there is _product name_ with their _description_ and both are string data type. This is a strong indication that the table has two columns & both of which are string data types.
+**Tip:** As you can see from this lab, there is _product name_ with their _description_ and both are string data type. This is a strong indication that the table has two columns & both of them are string data types.
 
 ### Payload
 At first enumerate table name using `all_tables`. `' UNION SELECT table_name,NULL FROM all_tables--` helps us with this. 
