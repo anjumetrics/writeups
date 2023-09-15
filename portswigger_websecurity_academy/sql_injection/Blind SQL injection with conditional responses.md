@@ -49,7 +49,7 @@ Now change it to: `TrackingId=xyz' AND '1'='2`. Verify that the `Welcome back` m
 
 ![poc_conditional_responses_confirm_02.png](../images/conditional_response_confirm_02.png)
 
-Now change it to: `TrackingId=xyz' AND (SELECT 'a' FROM users LIMIT 1)='a`. Verify that the condition is true, confirming that there is a table called users.
+Now change it to: `TrackingId=xyz' AND (SELECT 'a' FROM users LIMIT 1)='a`. Verify that the condition is true, confirming that there is a table called `users`.
 
 ![poc_confirming_users_table.png](../images/confirming_users_table.png)
 
@@ -57,7 +57,7 @@ Now change it to: `TrackingId=xyz' AND (SELECT 'a' FROM users WHERE username='ad
 
 ![poc_administrator_table.png](../images/administrator_table.png)
 
-The next step is to determine how many characters are in the password of the administrator user. To do this, change the value to: `TrackingId=xyz' AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>20)='a`. This condition should be true, confirming that the password has 19 characters in length.
+The next step is to determine how many characters are in the password of the administrator user. To do this, change the value to: `TrackingId=xyz' AND (SELECT 'a' FROM users WHERE username='administrator' AND LENGTH(password)>20)='a`. This condition should be false, confirming that the password has 19 characters in length.
 
 ![poc_password_length.png](../images/password_length.png)
 
