@@ -36,3 +36,5 @@ We tried all these payloads & figured out that this web application is using Pos
 ![poc_before_sleep_10_sec.png](../images/before_sleep_10_sec.png)
 
 ![poc_sleep_10_sec.png](../images/sleep_10_sec.png)
+
+After using this payload we got http response 10 second later which confirms the vulnerability.
