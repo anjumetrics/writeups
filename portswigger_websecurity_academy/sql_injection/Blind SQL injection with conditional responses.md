@@ -43,9 +43,7 @@ Initially, our foremost objective is to identify a potential vulnerability withi
 
 ### My thought
 
-Modify the `TrackingId` cookie, changing it to: `TrackingId=xyz' AND '1'='1`. Verify that the `Welcome back` message appears in the response.
-
-Now change it to: `TrackingId=xyz' AND '1'='2`. Verify that the `Welcome back` message does not appear in the response. This demonstrates how you can test a single boolean condition and infer the result.
+Modify the `TrackingId` cookie, changing it to: `TrackingId=xyz' AND '1'='1`. Verify that the `Welcome back` message appears in the response. Now change it to: `TrackingId=xyz' AND '1'='2`. Verify that the `Welcome back` message does not appear in the response. This demonstrates how you can test a single boolean condition and infer the result.
 
 ![poc_conditional_responses_confirm_02.png](../images/conditional_response_confirm_02.png)
 
